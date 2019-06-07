@@ -1,0 +1,23 @@
+.header {
+	display: grid;
+	grid-template-columns: 2fr 10fr;
+	grid-area: header;
+	background-color: #333333;
+	padding: 20px;
+	color: #e3e3e3;
+}
+
+.header .logoBlock {
+	background-position: center;
+	background: url("./../logo-1559928526143.png");
+	background-size: contain;
+	background-repeat: no-repeat no-repeat;
+}
+
+.header div {
+	text-align: center;
+}
+
+.header div h1 {
+	line-height: 2.3;
+}

@@ -1,0 +1,16 @@
+.menu {
+	grid-area: menu;
+	background-color: #333333;
+	padding: 20px;
+}
+
+.menu a {
+	list-style: none;
+	text-decoration: none;
+	color: #E3E3E3;
+	font-size: 24px;
+}
+
+ul li {
+	list-style: none;
+}

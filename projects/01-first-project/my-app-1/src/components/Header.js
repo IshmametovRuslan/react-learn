@@ -1,9 +1,10 @@
 import React from 'react';
+import classes from './Header.module.css';
 
 const Header = () => {
 	return (
-		<header className="header">
-			<div className="logoBlock">
+		<header className={classes.header}>
+			<div className={classes.logoBlock}>
 
 			</div>
 			<div>
