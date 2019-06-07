@@ -1,16 +1,15 @@
 import React from 'react';
 import './App.css';
-import TechList from './TechList';
-import Header from "./Header";
-import Footer from "./Footer";
-
+import Header from "./components/Header";
+import Nav from "./components/Nav";
+import Main from "./components/Main";
 
 const App = () => {
 	return (
-		<div>
-		    <Header/>
-			<TechList/>
-			<Footer/>
+		<div className="app-wrapper">
+			<Header/>
+			<Nav/>
+			<Main/>
 		</div>
 	);
 }
