@@ -1,9 +1,9 @@
 import React from 'react';
-import classes from "./ChatBlock.module.css";
+import classes from "./Posts.module.css";
 import Post from "./Post/Post";
-import PostForm from "./TextForm/TextForm";
+import PostForm from "../TextForm/TextForm";
 
-const ChatBlock = () => {
+const Posts = () => {
     return (
         <div className={classes.chatBlock}>
             <PostForm/>
@@ -16,4 +16,4 @@ const ChatBlock = () => {
     );
 }
 
-export default ChatBlock;
+export default Posts;

@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from "../ChatBlock.module.css";
+import classes from "../Posts.module.css";
 
 const Post = (props) => {
     return (

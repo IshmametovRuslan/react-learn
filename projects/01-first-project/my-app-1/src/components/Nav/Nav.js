@@ -5,10 +5,10 @@ const Nav = () => {
 	return (
 		<nav className={classes.menu}>
 			<ul>
-				<li><a href="#">Profile</a></li>
-				<li><a href="#">Messages</a></li>
-				<li><a href="#">Content</a></li>
-				<li><a href="#">Peoples</a></li>
+				<li><a href="/profile">Profile</a></li>
+				<li><a href="/dialogs">Dialogs</a></li>
+				<li><a href="/news">News</a></li>
+				<li><a href="/about">About</a></li>
 			</ul>
 		</nav>
 	);

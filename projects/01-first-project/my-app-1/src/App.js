@@ -2,22 +2,29 @@ import React from 'react';
 import './App.css';
 
 import Nav from "./components/Nav/Nav";
-import Main from "./components/Main/Main";
-import Dialogs from "./components/Dialogs/Dialogs";
+import Profile from "./components/Main/Profile/Profile";
+import Dialogs from "./components/Main/Dialogs/Dialogs";
 import Header from "./components/Header/Header";
-import classes from "./components/Main/Main.module.css";
+import classes from "./components/Main/Profile/Profile.module.css";
+import {BrowserRouter, Route} from "react-router-dom";
+import News from "./components/Main/News/News";
+import About from "./components/Main/About/About";
 
 const App = () => {
     return (
-        <div className="appWrapper">
-            <Header/>
-            <Nav/>
-
-            <div className={classes.main}>
-                <Dialogs/>
-                {/*<Main/>*/}
+        <BrowserRouter>
+            <div className="appWrapper">
+                <Header/>
+                <Nav/>
+                <div className={classes.main}>
+                    <Route path={"/dialogs"} component={Dialogs}/>
+                    <Route path={"/profile"} component={Profile}/>
+                    <Route path={"/news"} component={News}/>
+                    <Route path={"/about"} component={About}/>
+                </div>
             </div>
-        </div>
+        </BrowserRouter>
+
     );
 }
 

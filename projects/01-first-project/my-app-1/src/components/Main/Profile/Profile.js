@@ -1,9 +1,9 @@
 import React from 'react';
-import classes from './Main.module.css';
-import ChatBlock from "./ChatBlock/ChatBlock";
+import classes from './Profile.module.css';
+import Posts from "./Posts/Posts";
 import UserData from "./UserData/UserData";
 
-const Main = () => {
+const Profile = () => {
     return (
         <div>
             <div className={classes.headImage}>
@@ -12,9 +12,9 @@ const Main = () => {
                     alt=""/>
             </div>
             <UserData/>
-            <ChatBlock/>
+            <Posts/>
         </div>
     );
 }
 
-export default Main;
+export default Profile;
