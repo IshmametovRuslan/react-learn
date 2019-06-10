@@ -1,10 +1,13 @@
 import React from 'react';
 import classes from "../ChatBlock.module.css";
 
-const Post = () => {
+const Post = (props) => {
     return (
         <div className={classes.post}>
-            Message1
+            {props.message}
+            <div>
+                <span>Like - {props.likeCounts}</span>
+            </div>
         </div>
     );
 }
