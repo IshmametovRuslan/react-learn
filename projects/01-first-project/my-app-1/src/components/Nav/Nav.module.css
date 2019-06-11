@@ -1,7 +1,7 @@
 .menu {
 	grid-area: menu;
 	background-color: #333333;
-	padding: 20px;
+	padding: 30px;
 }
 
 .menu a {
@@ -9,6 +9,10 @@
 	text-decoration: none;
 	color: #E3E3E3;
 	font-size: 24px;
+}
+
+.menu a.activeLink {
+	color: #55a251;
 }
 
 ul li {

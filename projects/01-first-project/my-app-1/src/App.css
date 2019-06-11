@@ -8,6 +8,7 @@
   display: grid;
   max-width: 1152px;
   margin: auto;
+  grid-template-columns: 20%;
   grid-template-areas:
   "header header header header header"
   "menu main main main main";
