@@ -1,0 +1,10 @@
+.post {
+    border: 1px solid #e3e3e3;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.post span {
+    font-size: 14px;
+}

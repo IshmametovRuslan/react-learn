@@ -5,7 +5,7 @@ const Header = () => {
 	return (
 		<header className={classes.header}>
 			<div className={classes.logoBlock}>
-				<a href="/profile"></a>
+				<a href="/"></a>
 			</div>
 			<div>
 				<h1>Russko - социальная сеть</h1>

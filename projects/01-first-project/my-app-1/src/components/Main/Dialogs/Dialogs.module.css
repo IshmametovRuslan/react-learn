@@ -7,13 +7,6 @@
     border-right: 1px solid #e3e3e3;
 }
 
-.dialogItems .dialog {
-
-}
-
-.dialog.active {
-    color: #55a251;
-}
 
 .dialogs .messages {
     padding-left: 30px;
@@ -22,7 +15,7 @@
 .messages .message {
     display: block;
     border: 1px solid #e3e3e3;
-    padding: 20px 0 20px 0;
+    padding: 20px 0 20px 20px;
     margin: 20px 0 20px 0;
     border-radius: 10px;
 }
