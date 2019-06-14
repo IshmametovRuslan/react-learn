@@ -1,16 +1,9 @@
 import React from 'react'
 import classes from './Dialogs.module.css'
 import DialogItem from "./DialogItem/DialogItem"
+import Message from "./Message/Message";
 
-const Message = (props) => {
 
-    let message = props.message;
-    let id = props.id;
-
-    return (
-    <div className={classes.message} data-id={id}>{message}</div>
-    )
-}
 
 const Dialogs = (props) => {
 
@@ -28,15 +21,15 @@ const Dialogs = (props) => {
         {id: 3, message:"Не нужно больше ждать"},
         {id: 4, message:"В наших руках наша правда и вера"},
         {id: 5, message:"1984"}
-    ]
+    ];
 
     let dialogElements = [
         dialogData.map( dialog => <DialogItem id={dialog.id} name={dialog.name}/>)
-    ]
+    ];
 
     let messageElements = [
         messageData.map( messData => <Message message={messData.message} id={messData.id}/>)
-    ]
+    ];
 
     return (
         <div className={classes.dialogs}>
@@ -49,6 +42,6 @@ const Dialogs = (props) => {
             </div>
         </div>
     );
-}
+};
 
 export default Dialogs;

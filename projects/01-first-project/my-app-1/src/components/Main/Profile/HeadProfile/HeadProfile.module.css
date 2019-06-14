@@ -1,0 +1,10 @@
+.headImage {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+.headImage img {
+    width: 100%;
+    height: 300px;
+}

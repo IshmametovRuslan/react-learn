@@ -10,9 +10,8 @@ const Header = () => {
 			<div>
 				<h1>Russko - социальная сеть</h1>
 			</div>
-
 		</header>
 	);
-}
+};
 
 export default Header;

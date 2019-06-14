@@ -13,7 +13,6 @@ import About from "./components/Main/About/About";
 
 const App = () => {
 
-
     return (
         <BrowserRouter>
             <div className="appWrapper">
@@ -29,5 +28,5 @@ const App = () => {
         </BrowserRouter>
 
     );
-}
+};
 export default App;

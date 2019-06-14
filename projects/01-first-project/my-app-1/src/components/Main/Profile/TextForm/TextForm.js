@@ -8,6 +8,6 @@ const PostForm = () => {
             <button>Send</button>
         </div>
     );
-}
+};
 
 export default PostForm;

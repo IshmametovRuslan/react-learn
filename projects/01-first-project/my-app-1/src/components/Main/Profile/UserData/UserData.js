@@ -16,6 +16,6 @@ const UserData = () => {
             </div>
         </div>
     );
-}
+};
 
 export default UserData;
