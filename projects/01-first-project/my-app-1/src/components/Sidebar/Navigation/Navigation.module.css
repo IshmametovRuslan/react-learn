@@ -1,0 +1,13 @@
+.menu a.activeLink {
+    color: #55a251;
+    text-decoration: underline;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.menu a {
+    font-size: 30px;
+    transition: .5s;
+}

@@ -1,20 +1,16 @@
-.menu {
-	grid-area: menu;
+aside {
+	grid-area: sidebar;
 	background-color: #333333;
 	padding: 30px;
+	color: #E3E3E3;
 }
 
-.menu a {
+aside a {
 	list-style: none;
 	text-decoration: none;
 	color: #E3E3E3;
-	font-size: 24px;
 }
 
-.menu a.activeLink {
-	color: #55a251;
-}
-
-ul li {
+aside ul li {
 	list-style: none;
 }

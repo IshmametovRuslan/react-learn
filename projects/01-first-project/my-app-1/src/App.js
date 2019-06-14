@@ -1,7 +1,6 @@
-//import React from 'react';
 import './App.css';
 import React from 'react';
-import Nav from "./components/Nav/Nav";
+import Sidebar from "./components/Sidebar/Sidebar";
 import Profile from "./components/Main/Profile/Profile";
 import Dialogs from "./components/Main/Dialogs/Dialogs";
 import Header from "./components/Header/Header";
@@ -17,10 +16,10 @@ const App = (props) => {
         <BrowserRouter>
             <div className="appWrapper">
                 <Header/>
-                <Nav/>
+                <Sidebar sidebarData={props.state.sidebar}/>
                 <div className={classes.main}>
-                    <Route path={"/profile"} component={() => <Profile postData={props.postData}/>}/>
-                    <Route path={"/dialogs"} component={() => <Dialogs dialogData={props.dialogData} messageData={props.messageData}/>}/>
+                    <Route path={"/profile"} component={() => <Profile postData={props.state.profilePage}/>}/>
+                    <Route path={"/dialogs"} component={() => <Dialogs dialogData={props.state.dialogsPage}/>}/>
                     <Route path={"/news"} component={News}/>
                     <Route path={"/about"} component={About}/>
                 </div>

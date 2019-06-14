@@ -5,7 +5,7 @@ import PostForm from "../TextForm/TextForm";
 
 const Posts = (props) => {
 
-    let postData = props.postData;
+    let postData = props.postData.postData;
 
     let post = [
         postData.map(post => <Post post={post.postText} likeCounts={post.likeCount} id={post.postId}/>)
