@@ -7,21 +7,8 @@ import Message from "./Message/Message";
 
 const Dialogs = (props) => {
 
-    let dialogData = [
-        {id: 1, name:"Russ"},
-        {id: 2, name:"Tanya"},
-        {id: 3, name:"Dima"},
-        {id: 4, name:"Stas"},
-        {id: 5, name:"Vit"}
-    ];
-
-    let messageData = [
-        {id: 1, message:"Hello dirty world!"},
-        {id: 2, message:"О дивный новый мир!"},
-        {id: 3, message:"Не нужно больше ждать"},
-        {id: 4, message:"В наших руках наша правда и вера"},
-        {id: 5, message:"1984"}
-    ];
+    let dialogData = props.dialogData;
+    let messageData = props.messageData;
 
     let dialogElements = [
         dialogData.map( dialog => <DialogItem id={dialog.id} name={dialog.name}/>)

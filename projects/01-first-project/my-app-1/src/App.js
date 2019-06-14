@@ -11,7 +11,7 @@ import News from "./components/Main/News/News";
 import About from "./components/Main/About/About";
 
 
-const App = () => {
+const App = (props) => {
 
     return (
         <BrowserRouter>
@@ -19,8 +19,8 @@ const App = () => {
                 <Header/>
                 <Nav/>
                 <div className={classes.main}>
-                    <Route path={"/profile"} component={Profile}/>
-                    <Route path={"/dialogs"} component={Dialogs}/>
+                    <Route path={"/profile"} component={() => <Profile postData={props.postData}/>}/>
+                    <Route path={"/dialogs"} component={() => <Dialogs dialogData={props.dialogData} messageData={props.messageData}/>}/>
                     <Route path={"/news"} component={News}/>
                     <Route path={"/about"} component={About}/>
                 </div>

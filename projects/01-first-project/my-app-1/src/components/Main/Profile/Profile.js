@@ -3,12 +3,12 @@ import Posts from "./Posts/Posts";
 import UserData from "./UserData/UserData";
 import HeadProfile from "./HeadProfile/HeadProfile";
 
-const Profile = () => {
+const Profile = (props) => {
     return (
         <div>
             <HeadProfile/>
             <UserData/>
-            <Posts/>
+            <Posts postData={props.postData}/>
         </div>
     );
 };
