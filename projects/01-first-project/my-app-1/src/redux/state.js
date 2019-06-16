@@ -47,9 +47,9 @@ let state = {
         ],
         navData: [
             {itemId: 1, link: "/profile", itemName: "Profile"},
-            {itemId: 1, link: "/dialogs", itemName: "Dialogs"},
-            {itemId: 1, link: "/news", itemName: "News"},
-            {itemId: 1, link: "/about", itemName: "About"},
+            {itemId: 2, link: "/dialogs", itemName: "Dialogs"},
+            {itemId: 3, link: "/news", itemName: "News"},
+            {itemId: 4, link: "/about", itemName: "About"},
         ]
     }
 };

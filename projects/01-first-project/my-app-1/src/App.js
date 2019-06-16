@@ -13,19 +13,16 @@ import About from "./components/Main/About/About";
 const App = (props) => {
 
     return (
-        <BrowserRouter>
-            <div className="appWrapper">
-                <Header/>
-                <Sidebar sidebarData={props.state.sidebar}/>
-                <div className={classes.main}>
-                    <Route path={"/profile"} component={() => <Profile postData={props.state.profilePage}/>}/>
-                    <Route path={"/dialogs"} component={() => <Dialogs dialogData={props.state.dialogsPage}/>}/>
-                    <Route path={"/news"} component={News}/>
-                    <Route path={"/about"} component={About}/>
-                </div>
+        <div className="appWrapper">
+            <Header/>
+            <Sidebar sidebarData={props.state.sidebar}/>
+            <div className={classes.main}>
+                <Route path={"/profile"} render={() => <Profile postData={props.state.profilePage}/>}/>
+                <Route path={"/dialogs"} render={() => <Dialogs dialogData={props.state.dialogsPage}/>}/>
+                <Route path={"/news"} render={News}/>
+                <Route path={"/about"} render={About}/>
             </div>
-        </BrowserRouter>
-
+        </div>
     );
 };
 export default App;
