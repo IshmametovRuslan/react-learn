@@ -2,7 +2,7 @@ import React from 'react'
 import classes from './Dialogs.module.css'
 import DialogItem from "./DialogItem/DialogItem"
 import Message from "./Message/Message";
-
+import PostForm from "../Profile/TextForm/TextForm";
 
 
 const Dialogs = (props) => {
@@ -11,21 +11,24 @@ const Dialogs = (props) => {
     let messageData = props.dialogData.messageData;
 
     let dialogElements = [
-        dialogData.map( dialog => <DialogItem id={dialog.id} name={dialog.name}/>)
+        dialogData.map(dialog => <DialogItem id={dialog.id} name={dialog.name}/>)
     ];
 
     let messageElements = [
-        messageData.map( messData => <Message message={messData.message} id={messData.id}/>)
+        messageData.map(messData => <Message message={messData.message} id={messData.id}/>)
     ];
 
     return (
-        <div className={classes.dialogs}>
+        <div className={classes.dilogsBlock}>
+            <PostForm/>
+            <div className={classes.dialogs}>
 
-            <div className={classes.dialogItems}>
-                {dialogElements}
-            </div>
-            <div className={classes.messages}>
-                {messageElements}
+                <div className={classes.dialogItems}>
+                    {dialogElements}
+                </div>
+                <div className={classes.messages}>
+                    {messageElements}
+                </div>
             </div>
         </div>
     );

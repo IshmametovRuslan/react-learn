@@ -9,7 +9,6 @@ import {BrowserRouter, Route} from "react-router-dom";
 import News from "./components/Main/News/News";
 import About from "./components/Main/About/About";
 
-
 const App = (props) => {
 
     return (
@@ -17,7 +16,7 @@ const App = (props) => {
             <Header/>
             <Sidebar sidebarData={props.state.sidebar}/>
             <div className={classes.main}>
-                <Route path={"/profile"} render={() => <Profile postData={props.state.profilePage}/>}/>
+                <Route path={"/profile"} render={() => <Profile postData={props.state.profilePage} addPost={props.addPost}/>}/>
                 <Route path={"/dialogs"} render={() => <Dialogs dialogData={props.state.dialogsPage}/>}/>
                 <Route path={"/news"} render={News}/>
                 <Route path={"/about"} render={About}/>

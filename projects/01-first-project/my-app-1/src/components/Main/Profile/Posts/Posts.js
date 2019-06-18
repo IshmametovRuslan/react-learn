@@ -13,7 +13,7 @@ const Posts = (props) => {
 
     return (
         <div className={classes.chatBlock}>
-            <PostForm/>
+            <PostForm addPost={props.addPost}/>
             <div className={classes.postsBlock}>
                 {post}
             </div>

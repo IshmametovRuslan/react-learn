@@ -1,3 +1,5 @@
+import {renderEntireTree} from "../render";
+
 let state = {
 
     profilePage: {
@@ -52,6 +54,13 @@ let state = {
             {itemId: 4, link: "/about", itemName: "About"},
         ]
     }
+};
+
+export let addPost = (postMessage) => {
+    debugger
+    let newPost = { postId: 5, postText: postMessage, likeCount: 0};
+    state.profilePage.postData.push(newPost);
+    renderEntireTree(state);
 };
 
 export default state;
