@@ -13,7 +13,10 @@ const Posts = (props) => {
 
     return (
         <div className={classes.chatBlock}>
-            <PostForm addPost={props.addPost}/>
+            <PostForm
+                newPostText={props.postData.newPostText}
+                addPost={props.addPost}
+                updateNewPostText={props.updateNewPostText}/>
             <div className={classes.postsBlock}>
                 {post}
             </div>

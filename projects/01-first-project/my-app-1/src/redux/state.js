@@ -1,5 +1,6 @@
 import {renderEntireTree} from "../render";
 
+/* State данных в виде массивов */
 let state = {
 
     profilePage: {
@@ -8,7 +9,8 @@ let state = {
             {postId: 2, postText: "Heheyhey", likeCount: 2},
             {postId: 3, postText: "What is it?", likeCount: 3},
             {postId: 4, postText: "React it's cool", likeCount: 7}
-        ]
+        ],
+        newPostText: ''
     },
 
     dialogsPage: {
@@ -56,10 +58,32 @@ let state = {
     }
 };
 
-export let addPost = (postMessage) => {
-    debugger
-    let newPost = { postId: 5, postText: postMessage, likeCount: 0};
+/* Функция добавления поста в массив state */
+export let addPost = () => {
+
+    /* Формируем массив данных */
+    let newPost = {
+        postId: 5,
+        postText: state.profilePage.newPostText,
+        likeCount: 0};
+
+    /* Добавляем массив с данными в массив */
     state.profilePage.postData.push(newPost);
+
+    /* Обнуляем поле ввода в форме */
+    state.profilePage.newPostText = '';
+
+    /* Отрисовуем UI */
+    renderEntireTree(state);
+};
+
+/* Функция обновления текста в форме */
+export let updateNewPostText = (newText) => {
+
+    /* Записываем в массив новый текст, полученный из формы */
+    state.profilePage.newPostText = newText;
+
+    /* Отрисовуем UI*/
     renderEntireTree(state);
 };
 
